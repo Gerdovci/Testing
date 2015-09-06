@@ -1,18 +1,27 @@
 
-public class Hello {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("hej");
-
-		for (int i = 0; i < args.length; i++) {
-			System.out.println("RESET");
-		}
-<<<<<<< HEAD
-		System.out.println("PATCH");
-=======
->>>>>>> 0e93dc58dbcb3348449046975f3f085845d389b5
-
+public class Hello implements HelloMBean {
+	   private String message = null;
+	   
+	   public Hello() {
+	      message = "Hello, world";
+	   }
+	 
+	   public String getPette(){
+		   return "PETTE";
+	   }
+	   public Hello(String message) {
+	      this.message = message;
+	   }
+	 
+	   public void setMessage(String message) {
+	      this.message = message;
+	   }
+	 
+	   public String getMessage() {
+	      return message;
+	   }
+	 
+	   public void sayHello() {
+	      System.out.println(message);
+	   }
 	}
-
-}
