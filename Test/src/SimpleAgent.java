@@ -8,7 +8,11 @@ public class SimpleAgent {
 
     public SimpleAgent() {
 	System.out.println("testing");
+
 	System.out.println("pette pimp");
+
+	System.out.println("new test");
+
 	// Get the platform MBeanServer
 	mbs = ManagementFactory.getPlatformMBeanServer();
 
